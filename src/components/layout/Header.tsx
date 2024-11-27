@@ -64,7 +64,6 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
 
   const links = [
     { href: "#services", label: "Servicii" },
-    { href: "#calculator", label: "Calculator" },
     { href: "#contact", label: "Contact" }
   ];
 
