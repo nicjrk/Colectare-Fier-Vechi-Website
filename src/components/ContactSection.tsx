@@ -1,28 +1,29 @@
 import { Phone, Clock, MessageCircle } from 'lucide-react';
 import { LocationMap } from './map/LocationMap';
+import { SITE_CONFIG } from '@/lib/constants';
 
 export function ContactSection() {
   return (
     <div className="bg-white py-12" id="contact">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center mb-12">Contact</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <ContactCard
             icon={<Phone className="w-6 h-6" />}
             title="Telefon"
-            content="+40 722 808 554"
-            link="tel:+40722808554"
+            content={SITE_CONFIG.phone}
+            link={`tel:${SITE_CONFIG.phone}`}
           />
           <ContactCard
             icon={<MessageCircle className="w-6 h-6" />}
             title="WhatsApp"
-            content="+40 722 808 554"
-            link="https://wa.me/40722808554"
+            content={SITE_CONFIG.phone}
+            link={`https://wa.me/${SITE_CONFIG.whatsapp}`}
           />
           <ContactCard
             icon={<Clock className="w-6 h-6" />}
             title="Program"
-            content="Luni-Duminică: 07:00 - 22:00"
+            content={SITE_CONFIG.schedule}
           />
         </div>
         <div className="rounded-lg overflow-hidden shadow-lg">

@@ -1,4 +1,4 @@
-import { Recycle, Facebook, Instagram, Phone } from 'lucide-react';
+import { Recycle, Phone, MapPin, Clock } from 'lucide-react';
 import { SITE_CONFIG } from '@/lib/constants';
 
 export function Footer() {
@@ -18,33 +18,37 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Link-uri Rapide</h3>
-            <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-primary">Servicii</a></li>
-              <li><a href="#calculator" className="hover:text-primary">Calculator Preț</a></li>
-              <li><a href="#contact" className="hover:text-primary">Contact</a></li>
-            </ul>
-          </div>
-
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-            <div className="space-y-2">
+            <h3 className="text-lg font-semibold text-white mb-4">Program și Contact</h3>
+            <div className="space-y-3">
               <p className="flex items-center">
                 <Phone className="h-5 w-5 mr-2" />
                 <a href={`tel:${SITE_CONFIG.phone}`} className="hover:text-primary">
                   {SITE_CONFIG.phone}
                 </a>
               </p>
-              <p>{SITE_CONFIG.schedule}</p>
-              <div className="flex space-x-4 mt-4">
-                <a href="#" className="hover:text-primary">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="hover:text-primary">
-                  <Instagram className="h-6 w-6" />
+              <p className="flex items-center">
+                <Clock className="h-5 w-5 mr-2" />
+                {SITE_CONFIG.schedule}
+              </p>
+            </div>
+          </div>
+
+          {/* Location Info */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">Locație</h3>
+            <div className="flex items-start space-x-2">
+              <MapPin className="h-5 w-5 mt-1 flex-shrink-0" />
+              <div>
+                <p>{SITE_CONFIG.location.address}</p>
+                <a
+                  href={`https://www.google.com/maps/search/?api=1&query=${SITE_CONFIG.location.lat},${SITE_CONFIG.location.lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-primary hover:underline text-sm mt-2 inline-block"
+                >
+                  Deschide în Google Maps
                 </a>
               </div>
             </div>

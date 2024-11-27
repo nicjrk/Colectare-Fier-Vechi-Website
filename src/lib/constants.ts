@@ -4,9 +4,8 @@ export const SITE_CONFIG = {
   name: 'Colectare Fier Vechi',
   
   // Contact information
-  phone: '+40 722 808 554',
+  phone: '+40722808554',
   whatsapp: '40722808554',
-  email: 'colectamfiervechi.marian@gmail.com',
   
   // Business hours
   schedule: 'Luni-Duminică: 07:00 - 22:00',
