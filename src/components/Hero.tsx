@@ -25,7 +25,7 @@ export function Hero() {
             "@type": "Organization",
             "name": "Colectare Fier Vechi SRL",
             "telephone": "+40722808554",
-            "url": "https://example.com"
+            "url": "https://colectarefiervechibucuresti.ro"
           }
         })}
       </script>
