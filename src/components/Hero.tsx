@@ -7,7 +7,7 @@ export function Hero() {
       {/* Meta description for SEO */}
       <meta
         name="description"
-        content="Servicii de colectare și reciclare a fierului vechi în București și Ilfov. Oferim transport gratuit și cântărire la domiciliu."
+        content="Servicii de colectare si reciclare a fierului vechi in Bucuresti si Ilfov. Oferim transport gratuit și cântărire la domiciliu."
       />
 
       {/* Structured Data for SEO */}
@@ -58,7 +58,7 @@ export function Hero() {
               id="hero-heading"
               className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
             >
-              Colectăm Fier Vechi în București și Ilfov
+              Colectare Fier Vechi in Bucuresti si Ilfov
             </h1>
 
             {/* Descriptive Paragraph */}
