@@ -10,20 +10,10 @@ export const SITE_CONFIG = {
   // Business hours
   schedule: 'Luni-Duminică: 07:00 - 22:00',
   
-  // Location coordinates (Piața Obor area in București)
+  // Location coordinates (Aleea Hamului, Sector 6, București)
   location: {
-    lat: 44.4502,
-    lng: 26.1271,
-    address: 'București, Sector 2, România'
+    lat: 44.4210, // Actualizați coordonatele dacă aveți altele mai precise
+    lng: 26.0382,
+    address: 'București, Sector 6, Aleea Hamului'
   }
 };
-
-// Material prices in RON per kilogram
-export const MATERIAL_PRICES = {
-  iron: { name: 'Fier Vechi', price: 1.5 },
-  copper: { name: 'Cupru', price: 25 },
-  aluminum: { name: 'Aluminiu', price: 8 },
-  brass: { name: 'Alamă', price: 15 },
-  stainless: { name: 'Inox', price: 5 },
-  lead: { name: 'Plumb', price: 4 }
-} as const;
