@@ -15,7 +15,7 @@ export function Hero() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Service",
-          "name": "Colectare Fier Vechi",
+          "name": "Colectare Fier Vechi Bucuresti",
           "description": "Servicii complete de colectare și reciclare pentru materiale feroase și neferoase în București și Ilfov.",
           "areaServed": {
             "@type": "Place",
@@ -23,7 +23,7 @@ export function Hero() {
           },
           "provider": {
             "@type": "Organization",
-            "name": "Colectare Fier Vechi SRL",
+            "name": "Colectare Fier Vechi Bucuresti",
             "telephone": "+40722808554",
             "url": "https://colectarefiervechibucuresti.ro"
           }
